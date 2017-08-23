@@ -1,0 +1,17 @@
+<h1>ToDo</h1>
+
+
+<label for="item">New Item</label>
+<br>
+<input type="text" size="50" [(ngModel)]="newTodo.item" name="item">
+<br>
+<button id="add" (click)="addItem(newTodo)">Add Item</button>
+<br>
+
+<ul *ngFor="let todo of todos">
+    <li *ngIf="todo.item">{{ todo.item }} <br>
+        <br><input type="text" size="50" [(ngModel)]="newTodo.item" name="modify"><br>        
+        <br><button (click)="modifyItem(todo, newTodo)">Modify Item</button><br>
+        <br><button (click)="deleteItem(todo)">Delete Item</button><br>
+    </li>
+</ul>
