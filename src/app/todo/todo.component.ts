@@ -14,9 +14,9 @@ export class ToDoComponent{
 
     constructor(){
         this.todos = [
-            new Todo('First Todo Item'),
-            new Todo('Second Todo Item'),
-            new Todo('Make Todo Work')
+            new Todo('First Todo Item', false),
+            new Todo('Second Todo Item', false),
+            new Todo('Make Todo Work', false)
         ]
     }
 

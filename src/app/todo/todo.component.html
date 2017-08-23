@@ -13,5 +13,7 @@
         <br><input type="text" size="50" [(ngModel)]="newTodo.item" name="modify"><br>        
         <br><button (click)="modifyItem(todo, newTodo)">Modify Item</button><br>
         <br><button (click)="deleteItem(todo)">Delete Item</button><br>
+        <br><label for="done">Done</label>
+        <input type="checkbox" [(ngModel)]="todo.done">
     </li>
 </ul>
